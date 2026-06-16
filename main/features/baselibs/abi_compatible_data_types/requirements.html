@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -533,12 +533,6 @@
 <li class="toctree-l2"><a class="reference internal" href="../docs/requirements/index.html">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../docs/requirements/chklst_req_inspection.html">Requirement Inspection Checklist</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../docs/architecture/index.html">Architecture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../docs/architecture/chklst_arc_inspection.html">Architecture Inspection Checklist</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../docs/safety_analysis/dfa.html">DFA (Dependent Failure Analysis)</a></li>
-
-<li class="toctree-l2"><a class="reference internal" href="../docs/safety_analysis/fmea.html">FMEA (Failure Modes and Effects Analysis)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../docs/safety_planning/index.html">Feature Safety Work Products List</a></li>
-
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">ABI Compatible Data Types</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Requirements</a></li>
 </ul>
@@ -552,7 +546,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lifecycle/index.html">Lifecycle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../orchestration/index.html">Orchestration (v0.5 beta)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../persistency/index.html">Persistency (v0.5 beta)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../persistency/index.html">Persistency</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../security_crypto/index.html">Security &amp; Cryptography</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../time/index.html">Time</a></li>
 </ul>
@@ -627,7 +621,7 @@
 <h2>ABI Compatibility<a class="headerlink" href="#abi-compatibility" title="Link to this heading">#</a></h2>
 <section id="restrictions-on-native-types">
 <h3>Restrictions on Native Types<a class="headerlink" href="#restrictions-on-native-types" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-8d901743">
+<div class="need_container docutils container" id="SNCB-b09acff8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__bool_sz">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -648,7 +642,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__bool_sz">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__bool_sz">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -670,7 +664,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2cebe055">
+<div class="need_container docutils container" id="SNCB-da038e18">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__int_fix">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -691,7 +685,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__int_fix">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__int_fix">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -713,7 +707,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-9baf252e">
+<div class="need_container docutils container" id="SNCB-91d870fc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__flt_sz">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -734,7 +728,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__flt_sz">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__flt_sz">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -756,7 +750,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-149a16c4">
+<div class="need_container docutils container" id="SNCB-e51be940">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__char">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -777,7 +771,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__char">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__char">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -799,7 +793,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5fa78bcd">
+<div class="need_container docutils container" id="SNCB-b2658458">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__arr_fix">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -820,7 +814,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__arr_fix">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__arr_fix">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -842,7 +836,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-9c991d90">
+<div class="need_container docutils container" id="SNCB-bcf10343">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__st_tpl">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -863,7 +857,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__st_tpl">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__st_tpl">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -885,7 +879,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fe626821">
+<div class="need_container docutils container" id="SNCB-2093aac6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__enum_udr">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -906,7 +900,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__enum_udr">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__enum_udr">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -928,7 +922,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-eeb9b8d4">
+<div class="need_container docutils container" id="SNCB-c600475c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__nop_mt">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -949,7 +943,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__nop_mt">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__nop_mt">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -971,7 +965,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-edde2a62">
+<div class="need_container docutils container" id="SNCB-5342de40">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__compabi">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -992,7 +986,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__compabi">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__compabi">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1019,7 +1013,7 @@
 <h3>Custom Types<a class="headerlink" href="#custom-types" title="Link to this heading">#</a></h3>
 <section id="vector">
 <h4>Vector<a class="headerlink" href="#vector" title="Link to this heading">#</a></h4>
-<div class="need_container docutils container" id="SNCB-4347fe6d">
+<div class="need_container docutils container" id="SNCB-e7d5ecbd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__prv_abv">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1040,7 +1034,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_abv">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_abv">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1078,7 +1072,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5b857155">
+<div class="need_container docutils container" id="SNCB-923abc14">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abv_fld">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1099,7 +1093,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abv_fld">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abv_fld">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1121,7 +1115,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3c4f6743">
+<div class="need_container docutils container" id="SNCB-71cb83c2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abv_noa">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1142,7 +1136,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abv_noa">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abv_noa">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1164,7 +1158,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-af4ffe30">
+<div class="need_container docutils container" id="SNCB-ec6d33d1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abv_ovf">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1185,7 +1179,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abv_ovf">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abv_ovf">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1210,7 +1204,7 @@
 </section>
 <section id="string">
 <h4>String<a class="headerlink" href="#string" title="Link to this heading">#</a></h4>
-<div class="need_container docutils container" id="SNCB-b3ff1d58">
+<div class="need_container docutils container" id="SNCB-6ddca3ed">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__prv_abs">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1231,7 +1225,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_abs">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_abs">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1269,7 +1263,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-e4edb5a3">
+<div class="need_container docutils container" id="SNCB-4f35163b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abs_fld">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1290,7 +1284,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abs_fld">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abs_fld">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1312,7 +1306,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-13ae8d3c">
+<div class="need_container docutils container" id="SNCB-0ec162e9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abs_noa">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1333,7 +1327,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abs_noa">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abs_noa">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1355,7 +1349,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-25b880fa">
+<div class="need_container docutils container" id="SNCB-bb7be795">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abs_ovf">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1376,7 +1370,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abs_ovf">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abs_ovf">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1401,7 +1395,7 @@
 </section>
 <section id="option">
 <h4>Option<a class="headerlink" href="#option" title="Link to this heading">#</a></h4>
-<div class="need_container docutils container" id="SNCB-2eb70355">
+<div class="need_container docutils container" id="SNCB-6d4f63fa">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__prv_abo">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1422,7 +1416,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_abo">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_abo">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1460,7 +1454,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-621219d5">
+<div class="need_container docutils container" id="SNCB-2403d963">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abo_flg">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1481,7 +1475,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abo_flg">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abo_flg">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1503,7 +1497,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-44dac340">
+<div class="need_container docutils container" id="SNCB-17dd214e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__abo_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1524,7 +1518,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abo_api">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__abo_api">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1549,7 +1543,7 @@
 </section>
 <section id="result">
 <h4>Result<a class="headerlink" href="#result" title="Link to this heading">#</a></h4>
-<div class="need_container docutils container" id="SNCB-ec6f0c6b">
+<div class="need_container docutils container" id="SNCB-406752fe">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__prv_ari">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1570,7 +1564,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_ari">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__prv_ari">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1617,7 +1611,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ca487b3d">
+<div class="need_container docutils container" id="SNCB-d71f4992">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__ari_flg">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1638,7 +1632,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__ari_flg">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__ari_flg">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1660,7 +1654,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ffd22d6f">
+<div class="need_container docutils container" id="SNCB-dd67db4f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__abi_compatible_data_types__ari_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1681,7 +1675,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__ari_api">stkh_req__communication__abi_compatible</a></span></span></div>
+<div class="line"><span><div class="line">derived from: <span class="derived_from"><span><a class="reference internal" href="../../../requirements/stakeholder/index.html#stkh_req__communication__abi_compatible" title="feat_req__abi_compatible_data_types__ari_api">stkh_req__communication__abi_compatible</a></span></span></div>
 </span></div>
 </div>
 </td>
